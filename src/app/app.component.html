@@ -1,0 +1,13 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+ </div>
+ <select (change)="selectLang($event.target.value)">
+ 	<option *ngFor="let lang of supportedLangs" value="{{lang.value}}">{{lang.display}}</option>
+ </select>
+ <div>
+ 	<h3>{{ translatedText }}</h3>
+ 	<h2>{{welcome}}</h2>
+ </div>
